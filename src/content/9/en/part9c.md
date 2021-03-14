@@ -329,11 +329,11 @@ const router = express.Router();
 
 router.get('/', (_req, res) => {
   res.send('Fetching all diaries!');
-})
+});
 
 router.post('/', (_req, res) => {
   res.send('Saving a diary!');
-})
+});
 
 export default router;
 ```
@@ -375,7 +375,7 @@ place the <i>diaryService.ts</i> file in it.
 The file contains two functions for fetching and saving diary entries:
 
 ```js
-import diaryData from '../../data/diaries.json'
+import diaryData from '../../data/diaries.json';
 
 const getEntries = () => {
   return diaryData;
